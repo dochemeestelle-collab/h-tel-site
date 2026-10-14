@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hôtel Adjégounlè | Chambres, Restaurant &amp; Événements</title>
+  <meta name="description" content="Découvrez l'Hôtel Adjégounlè : chambres climatisées, restaurant, bar, pâtisserie, WiFi, salles de fêtes, conférences, service traiteur et formation d'hôtellerie." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hôtel Adjégounlè | Chambres, Restaurant &amp; Événements" />
+  <meta property="og:description" content="Séjournez, savourez et célébrez à l'Hôtel Adjégounlè. Chambres climatisées &amp; VIP, restaurant, salle de fêtes, conférences." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200" />
+
+  <!-- Schema.org Hotel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hôtel Adjégounlè",
+    "telephone": "+22601934593939",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "WiFi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Bar", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Salle de conférences", "value": true}
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__container">
+      <a href="#accueil" class="navbar__logo" aria-label="Hôtel Adjégounlè — Accueil">
+        <span class="navbar__logo-icon" aria-hidden="true">H</span>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">Hôtel Adjégounlè</span>
+          <span class="navbar__logo-tagline">Hébergement · Restaurant · Événements</span>
+        </div>
+      </a>
+
+      <nav class="navbar__nav" role="navigation" aria-label="Navigation principale">
+        <ul class="navbar__links" role="list">
+          <li><a href="#accueil" class="navbar__link">Accueil</a></li>
+          <li><a href="#chambres" class="navbar__link">Chambres</a></li>
+          <li><a href="#services" class="navbar__link">Services</a></li>
+          <li><a href="#restaurant" class="navbar__link">Restaurant</a></li>
+          <li><a href="#evenements" class="navbar__link">Événements</a></li>
+          <li><a href="#galerie" class="navbar__link">Galerie</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20avoir%20des%20informations%20concernant%20une%20r%C3%A9servation."
+           class="btn btn--whatsapp navbar__whatsapp"
+           target="_blank" rel="noopener noreferrer"
+           id="whatsapp-header"
+           aria-label="Contacter par WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#chambres" class="btn btn--primary navbar__cta" id="navbar-reserve-btn">Réserver</a>
+      </div>
+
+      <button class="navbar__burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="navbar__burger-bar"></span>
+        <span class="navbar__burger-bar"></span>
+        <span class="navbar__burger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu mobile" aria-hidden="true">
+      <nav>
+        <ul class="mobile-menu__links" role="list">
+          <li><a href="#accueil" class="mobile-menu__link">Accueil</a></li>
+          <li><a href="#chambres" class="mobile-menu__link">Chambres</a></li>
+          <li><a href="#services" class="mobile-menu__link">Services</a></li>
+          <li><a href="#restaurant" class="mobile-menu__link">Restaurant</a></li>
+          <li><a href="#evenements" class="mobile-menu__link">Événements</a></li>
+          <li><a href="#galerie" class="mobile-menu__link">Galerie</a></li>
+          <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20avoir%20des%20informations."
+             class="btn btn--whatsapp btn--full" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+          <a href="#chambres" class="btn btn--primary btn--full">Réserver une chambre</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="accueil" aria-label="Section principale">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80"
+          alt="Vue intérieure chaleureuse de l'Hôtel Adjégounlè"
+          class="hero__img"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__badge">
+          <span>Chambres climatisées</span>
+          <span class="hero__badge-dot" aria-hidden="true">•</span>
+          <span>WiFi</span>
+          <span class="hero__badge-dot" aria-hidden="true">•</span>
+          <span>Restaurant</span>
+        </div>
+
+        <h1 class="hero__title">
+          Votre séjour,<br/>
+          <em>Notre hospitalité.</em>
+        </h1>
+
+        <p class="hero__subtitle">
+          Un lieu pensé pour séjourner, se retrouver, célébrer et profiter.
+        </p>
+
+        <div class="hero__services">
+          CHAMBRES&nbsp;&nbsp;•&nbsp;&nbsp;RESTAURANT&nbsp;&nbsp;•&nbsp;&nbsp;ÉVÉNEMENTS&nbsp;&nbsp;•&nbsp;&nbsp;CONFÉRENCES
+        </div>
+
+        <div class="hero__cta-group">
+          <a href="#chambres" class="btn btn--hero-primary" id="hero-reserve-btn">
+            Réserver une chambre
+          </a>
+          <a href="#contact" class="btn btn--hero-secondary" id="hero-contact-btn">
+            Nous contacter
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-text">Découvrir</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==================== INTRO ==================== -->
+    <section class="intro section" id="intro" aria-labelledby="intro-title">
+      <div class="container intro__grid">
+        <div class="intro__text reveal">
+          <div class="section-label">Notre établissement</div>
+          <h2 class="intro__title" id="intro-title">
+            Un hôtel pensé pour vos moments importants.
+          </h2>
+          <p class="intro__body">
+            Que vous soyez de passage pour une nuit, en famille pour un repas, ou que vous organisiez un événement professionnel ou une célébration privée, l'Hôtel Adjégounlè vous accueille dans un cadre chaleureux, pratique et soigné.
+          </p>
+          <p class="intro__body">
+            Hébergement confortable, restauration sur place, espaces modulables pour vos événements — tout est réuni pour vous offrir une expérience complète, sans tracas.
+          </p>
+          <div class="intro__pillars">
+            <div class="intro__pillar">
+              <div class="intro__pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <span>Hébergement</span>
+            </div>
+            <div class="intro__pillar">
+              <div class="intro__pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                  <line x1="6" y1="1" x2="6" y2="4"/>
+                  <line x1="10" y1="1" x2="10" y2="4"/>
+                  <line x1="14" y1="1" x2="14" y2="4"/>
+                </svg>
+              </div>
+              <span>Restauration</span>
+            </div>
+            <div class="intro__pillar">
+              <div class="intro__pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <span>Événements</span>
+            </div>
+            <div class="intro__pillar">
+              <div class="intro__pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <span>Conférences</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro__image-wrap reveal reveal--delay">
+          <img
+            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80"
+            alt="Lobby élégant de l'hôtel avec mobilier confortable"
+            class="intro__image"
+            loading="lazy"
+          />
+          <div class="intro__image-card" aria-label="Disponible 7j/7">
+            <div class="intro__image-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <div class="intro__image-card-label">Disponible</div>
+              <div class="intro__image-card-value">7j/7 — Toute l'année</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHAMBRES ==================== -->
+    <section class="rooms section section--ivory" id="chambres" aria-labelledby="rooms-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Hébergement</div>
+          <h2 class="section-title" id="rooms-title">Choisissez votre espace</h2>
+          <p class="section-subtitle">Trois catégories de chambres pour répondre à vos besoins et à votre confort.</p>
+        </div>
+
+        <div class="rooms__grid">
+
+          <!-- Chambre Climatisée -->
+          <article class="room-card reveal" aria-labelledby="room-clim-title">
+            <div class="room-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80"
+                alt="Chambre climatisée confortable avec lit double"
+                class="room-card__img"
+                loading="lazy"
+              />
+              <div class="room-card__badge">01</div>
+            </div>
+            <div class="room-card__content">
+              <h3 class="room-card__title" id="room-clim-title">Chambre Climatisée</h3>
+              <p class="room-card__desc">Un espace confortable avec climatisation, idéal pour un séjour reposant en toute saison.</p>
+              <ul class="room-card__features" aria-label="Équipements">
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Climatisation
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  WiFi inclus
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Literie de qualité
+                </li>
+              </ul>
+              <div class="room-card__price">Tarif sur demande</div>
+              <div class="room-card__actions">
+                <a href="#contact" class="btn btn--primary btn--sm" id="reserve-clim-btn">Demander une réservation</a>
+                <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20r%C3%A9server%20une%20chambre%20climatis%C3%A9e."
+                   class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener noreferrer" id="wa-clim-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chambre VIP -->
+          <article class="room-card room-card--featured reveal reveal--delay" aria-labelledby="room-vip-title">
+            <div class="room-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700&q=80"
+                alt="Suite VIP luxueuse avec décoration soignée"
+                class="room-card__img"
+                loading="lazy"
+              />
+              <div class="room-card__badge">02</div>
+              <div class="room-card__vip-tag">VIP</div>
+            </div>
+            <div class="room-card__content">
+              <h3 class="room-card__title" id="room-vip-title">Chambre VIP</h3>
+              <p class="room-card__desc">Notre gamme supérieure pour un séjour d'exception, avec des équipements et une finition au-dessus du standard.</p>
+              <ul class="room-card__features" aria-label="Équipements">
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Climatisation premium
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  WiFi haut débit
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Décoration soignée
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Service personnalisé
+                </li>
+              </ul>
+              <div class="room-card__price">Tarif sur demande</div>
+              <div class="room-card__actions">
+                <a href="#contact" class="btn btn--primary btn--sm" id="reserve-vip-btn">Demander une réservation</a>
+                <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20r%C3%A9server%20une%20chambre%20VIP."
+                   class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener noreferrer" id="wa-vip-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chambre Ventilée -->
+          <article class="room-card reveal reveal--delay-2" aria-labelledby="room-vent-title">
+            <div class="room-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=700&q=80"
+                alt="Chambre ventilée lumineuse et confortable"
+                class="room-card__img"
+                loading="lazy"
+              />
+              <div class="room-card__badge">03</div>
+            </div>
+            <div class="room-card__content">
+              <h3 class="room-card__title" id="room-vent-title">Chambre Ventilée</h3>
+              <p class="room-card__desc">Une option pratique et agréable avec ventilation naturelle, pour un séjour simple et reposant.</p>
+              <ul class="room-card__features" aria-label="Équipements">
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Ventilation
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  WiFi inclus
+                </li>
+                <li class="room-card__feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Confort essentiel
+                </li>
+              </ul>
+              <div class="room-card__price">Tarif sur demande</div>
+              <div class="room-card__actions">
+                <a href="#contact" class="btn btn--primary btn--sm" id="reserve-vent-btn">Demander une réservation</a>
+                <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20r%C3%A9server%20une%20chambre%20ventil%C3%A9e."
+                   class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener noreferrer" id="wa-vent-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Nos offres</div>
+          <h2 class="section-title" id="services-title">Bien plus qu'un hôtel</h2>
+          <p class="section-subtitle">L'Hôtel Adjégounlè réunit sous un même toit tout ce dont vous avez besoin pour séjourner, manger, travailler ou célébrer.</p>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-item reveal" role="article" aria-labelledby="svc-restaurant">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-restaurant">Restaurant</h3>
+            <p class="service-item__desc">Savourez des plats préparés avec soin dans notre restaurant.</p>
+          </div>
+
+          <div class="service-item reveal reveal--delay" role="article" aria-labelledby="svc-bar">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8 22h8M7 10h10l-1.5-7H8.5L7 10z"/><path d="M12 10v12"/><path d="M7 14c0 4 10 4 10 0"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-bar">Bar</h3>
+            <p class="service-item__desc">Un espace convivial pour se retrouver autour d'un verre.</p>
+          </div>
+
+          <div class="service-item reveal reveal--delay-2" role="article" aria-labelledby="svc-patisserie">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-patisserie">Pâtisserie</h3>
+            <p class="service-item__desc">Douceurs fraîchement préparées pour accompagner vos moments.</p>
+          </div>
+
+          <div class="service-item reveal" role="article" aria-labelledby="svc-wifi">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-wifi">WiFi</h3>
+            <p class="service-item__desc">Connexion internet disponible dans l'établissement.</p>
+          </div>
+
+          <div class="service-item reveal reveal--delay" role="article" aria-labelledby="svc-traiteur">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-traiteur">Service traiteur</h3>
+            <p class="service-item__desc">Préparation et service de repas pour vos événements et réceptions.</p>
+          </div>
+
+          <div class="service-item reveal reveal--delay-2" role="article" aria-labelledby="svc-cuisine">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-cuisine">Cuisine</h3>
+            <p class="service-item__desc">Des préparations culinaires soignées adaptées à vos goûts.</p>
+          </div>
+
+          <div class="service-item reveal" role="article" aria-labelledby="svc-fetes">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 17H2a3 3 0 000 6h20a3 3 0 000-6z"/><path d="M12 17V3"/><path d="M9 10l3-7 3 7"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-fetes">Salle de fêtes</h3>
+            <p class="service-item__desc">Un espace festif adapté à vos célébrations et réunions privées.</p>
+          </div>
+
+          <div class="service-item reveal reveal--delay" role="article" aria-labelledby="svc-conf">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-conf">Salle de conférences</h3>
+            <p class="service-item__desc">Espace professionnel pour vos réunions et séminaires.</p>
+          </div>
+
+          <div class="service-item reveal reveal--delay-2" role="article" aria-labelledby="svc-formation">
+            <div class="service-item__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+              </svg>
+            </div>
+            <h3 class="service-item__title" id="svc-formation">Formation hôtelière</h3>
+            <p class="service-item__desc">Programmes de formation aux métiers de l'hôtellerie et de la restauration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESTAURANT ==================== -->
+    <section class="restaurant section section--ivory" id="restaurant" aria-labelledby="restaurant-title">
+      <div class="container">
+        <div class="restaurant__layout">
+          <div class="restaurant__image-col reveal">
+            <div class="restaurant__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                alt="Table dressée élégamment au restaurant de l'Hôtel Adjégounlè"
+                class="restaurant__img"
+                loading="lazy"
+              />
+              <div class="restaurant__img-accent" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="restaurant__text-col reveal reveal--delay">
+            <div class="section-label">Restauration</div>
+            <h2 class="restaurant__title" id="restaurant-title">
+              À table,<br/>tout simplement.
+            </h2>
+            <p class="restaurant__body">
+              Le restaurant de l'Hôtel Adjégounlè vous accueille pour un repas chaleureux, qu'il s'agisse d'un déjeuner en semaine, d'un dîner en famille ou d'un service de traiteur pour votre événement.
+            </p>
+            <div class="restaurant__offers">
+              <div class="restaurant__offer">
+                <div class="restaurant__offer-dot" aria-hidden="true"></div>
+                <div>
+                  <strong>Restaurant</strong>
+                  <span>Cuisine préparée avec soin</span>
+                </div>
+              </div>
+              <div class="restaurant__offer">
+                <div class="restaurant__offer-dot" aria-hidden="true"></div>
+                <div>
+                  <strong>Bar</strong>
+                  <span>Boissons et convivialité</span>
+                </div>
+              </div>
+              <div class="restaurant__offer">
+                <div class="restaurant__offer-dot" aria-hidden="true"></div>
+                <div>
+                  <strong>Pâtisserie</strong>
+                  <span>Douceurs fraîches du jour</span>
+                </div>
+              </div>
+              <div class="restaurant__offer">
+                <div class="restaurant__offer-dot" aria-hidden="true"></div>
+                <div>
+                  <strong>Service traiteur</strong>
+                  <span>Pour vos événements et réceptions</span>
+                </div>
+              </div>
+            </div>
+            <p class="restaurant__menu-note">Menu disponible sur demande</p>
+            <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20votre%20restauration."
+               class="btn btn--primary" target="_blank" rel="noopener noreferrer" id="restaurant-wa-btn">
+              Renseignements par WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ÉVÉNEMENTS ==================== -->
+    <section class="events section" id="evenements" aria-labelledby="events-title">
+      <div class="events__bg">
+        <img
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80"
+          alt="Salle d'événement décorée élégamment"
+          class="events__bg-img"
+          loading="lazy"
+        />
+        <div class="events__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container events__content">
+        <div class="events__header reveal">
+          <div class="section-label section-label--light">Événements</div>
+          <h2 class="events__title" id="events-title">
+            Vos événements prennent<br/>une autre dimension.
+          </h2>
+          <p class="events__subtitle">
+            Que ce soit pour une réunion professionnelle, une conférence, une cérémonie ou une fête privée — nous mettons nos espaces à votre service.
+          </p>
+        </div>
+
+        <div class="events__grid">
+          <div class="event-card reveal" aria-labelledby="ev-fetes">
+            <div class="event-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/>
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+              </svg>
+            </div>
+            <h3 class="event-card__title" id="ev-fetes">Salle de fêtes</h3>
+            <p class="event-card__desc">Mariages, baptêmes, anniversaires, réceptions privées — un espace festif pour vos moments de partage.</p>
+            <ul class="event-card__uses">
+              <li>Mariages &amp; fiançailles</li>
+              <li>Anniversaires</li>
+              <li>Réceptions privées</li>
+            </ul>
+          </div>
+
+          <div class="event-card reveal reveal--delay" aria-labelledby="ev-conf">
+            <div class="event-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="event-card__title" id="ev-conf">Salle de conférences</h3>
+            <p class="event-card__desc">Un cadre professionnel pour vos séminaires, formations, réunions d'équipe et rencontres d'affaires.</p>
+            <ul class="event-card__uses">
+              <li>Réunions d'affaires</li>
+              <li>Séminaires</li>
+              <li>Conférences</li>
+            </ul>
+          </div>
+
+          <div class="event-card reveal reveal--delay-2" aria-labelledby="ev-traiteur">
+            <div class="event-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="event-card__title" id="ev-traiteur">Service traiteur</h3>
+            <p class="event-card__desc">Accompagnez chaque événement d'une restauration sur mesure, préparée par notre équipe.</p>
+            <ul class="event-card__uses">
+              <li>Cocktails &amp; buffets</li>
+              <li>Repas de gala</li>
+              <li>Événements privés</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="events__cta reveal">
+          <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20avoir%20des%20informations%20concernant%20l%27organisation%20d%27un%20%C3%A9v%C3%A9nement."
+             class="btn btn--light" target="_blank" rel="noopener noreferrer" id="events-wa-btn">
+            Organiser un événement
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORMATION ==================== -->
+    <section class="training section" id="formation" aria-labelledby="training-title">
+      <div class="container training__grid">
+        <div class="training__text reveal">
+          <div class="section-label">Formation</div>
+          <h2 class="training__title" id="training-title">
+            Apprendre les métiers<br/>de l'hôtellerie.
+          </h2>
+          <p class="training__body">
+            L'Hôtel Adjégounlè ne se limite pas à l'accueil et à la restauration. L'établissement propose également des formations aux métiers de l'hôtellerie, permettant aux apprenants de se former dans un cadre professionnel réel.
+          </p>
+          <p class="training__body">
+            Pour toute information sur les programmes disponibles, les conditions d'accès ou les modalités, nous vous invitons à nous contacter directement.
+          </p>
+          <a href="#contact" class="btn btn--secondary" id="training-info-btn">En savoir plus</a>
+        </div>
+        <div class="training__visual reveal reveal--delay">
+          <div class="training__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=700&q=80"
+              alt="Formation hôtelière — apprentissage des métiers du service"
+              class="training__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="training__badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+            </svg>
+            <span>Formation d'hôtellerie</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== POURQUOI NOUS ==================== -->
+    <section class="why section section--ivory" id="pourquoi" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Notre différence</div>
+          <h2 class="section-title" id="why-title">Pourquoi choisir l'Hôtel Adjégounlè ?</h2>
+          <p class="section-subtitle">Un établissement polyvalent qui réunit l'hébergement, la restauration et les événements en un seul lieu.</p>
+        </div>
+
+        <div class="why__grid">
+          <div class="why-item reveal" role="article">
+            <div class="why-item__number" aria-hidden="true">01</div>
+            <h3 class="why-item__title">Plusieurs types de chambres</h3>
+            <p class="why-item__desc">Chambres climatisées, VIP et ventilées — une gamme adaptée à chaque besoin et chaque budget.</p>
+          </div>
+          <div class="why-item reveal reveal--delay" role="article">
+            <div class="why-item__number" aria-hidden="true">02</div>
+            <h3 class="why-item__title">Restauration sur place</h3>
+            <p class="why-item__desc">Restaurant, bar et pâtisserie disponibles — sans quitter l'hôtel.</p>
+          </div>
+          <div class="why-item reveal reveal--delay-2" role="article">
+            <div class="why-item__number" aria-hidden="true">03</div>
+            <h3 class="why-item__title">WiFi disponible</h3>
+            <p class="why-item__desc">Restez connecté pendant votre séjour grâce au WiFi de l'établissement.</p>
+          </div>
+          <div class="why-item reveal" role="article">
+            <div class="why-item__number" aria-hidden="true">04</div>
+            <h3 class="why-item__title">Espaces pour événements</h3>
+            <p class="why-item__desc">Salle de fêtes et salle de conférences disponibles pour vos projets.</p>
+          </div>
+          <div class="why-item reveal reveal--delay" role="article">
+            <div class="why-item__number" aria-hidden="true">05</div>
+            <h3 class="why-item__title">Service traiteur</h3>
+            <p class="why-item__desc">Accompagnez vos événements d'une restauration soignée par notre équipe.</p>
+          </div>
+          <div class="why-item reveal reveal--delay-2" role="article">
+            <div class="why-item__number" aria-hidden="true">06</div>
+            <h3 class="why-item__title">Atmosphère conviviale</h3>
+            <p class="why-item__desc">Un accueil chaleureux dans un cadre local, authentique et accessible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GALERIE ==================== -->
+    <section class="gallery section" id="galerie" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Galerie</div>
+          <h2 class="section-title" id="gallery-title">L'hôtel en images</h2>
+          <p class="section-subtitle">Découvrez nos espaces, nos chambres et l'atmosphère de l'établissement.</p>
+        </div>
+
+        <div class="gallery__filters reveal" role="group" aria-label="Filtrer la galerie">
+          <button class="gallery__filter active" data-filter="all" id="filter-all">Tout</button>
+          <button class="gallery__filter" data-filter="hotel" id="filter-hotel">Hôtel</button>
+          <button class="gallery__filter" data-filter="chambres" id="filter-chambres">Chambres</button>
+          <button class="gallery__filter" data-filter="restaurant" id="filter-restaurant">Restaurant</button>
+          <button class="gallery__filter" data-filter="evenements" id="filter-evenements">Événements</button>
+        </div>
+
+        <div class="gallery__grid" id="gallery-grid">
+          <div class="gallery__item gallery__item--wide" data-category="hotel">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80" alt="Façade de l'hôtel" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Hôtel</span></div>
+          </div>
+          <div class="gallery__item" data-category="chambres">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Chambre climatisée" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Chambre climatisée</span></div>
+          </div>
+          <div class="gallery__item" data-category="chambres">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Chambre VIP" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Chambre VIP</span></div>
+          </div>
+          <div class="gallery__item" data-category="restaurant">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Restaurant</span></div>
+          </div>
+          <div class="gallery__item gallery__item--tall" data-category="hotel">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Espace commun" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Espace commun</span></div>
+          </div>
+          <div class="gallery__item" data-category="evenements">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Salle d'événement" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Salle d'événement</span></div>
+          </div>
+          <div class="gallery__item" data-category="restaurant">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Cuisine" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Cuisine</span></div>
+          </div>
+          <div class="gallery__item" data-category="evenements">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80" alt="Conférence" class="gallery__img" loading="lazy"/>
+            <div class="gallery__item-overlay"><span>Conférence</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section" id="cta" aria-label="Appel à l'action">
+      <div class="cta-section__bg" aria-hidden="true"></div>
+      <div class="container cta-section__content reveal">
+        <div class="section-label section-label--gold">Prêt à nous rejoindre ?</div>
+        <h2 class="cta-section__title">
+          Votre prochaine étape<br/>commence ici.
+        </h2>
+        <p class="cta-section__subtitle">
+          Pour une réservation, un événement ou une demande d'information, notre équipe est à votre écoute.
+        </p>
+        <div class="cta-section__actions">
+          <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20r%C3%A9server%20une%20chambre."
+             class="btn btn--light" target="_blank" rel="noopener noreferrer" id="cta-reserve-btn">
+            Réserver une chambre
+          </a>
+          <a href="#contact" class="btn btn--outline-light" id="cta-contact-btn">
+            Nous contacter
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+
+        <div class="contact__info reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="contact__title" id="contact-title">Parlons-nous.</h2>
+          <p class="contact__intro">
+            Que vous souhaitiez faire une réservation, organiser un événement ou obtenir une information — notre équipe est disponible pour vous répondre.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__detail-label">Téléphone</div>
+                <a href="tel:+22601934593939" class="contact__detail-value" id="phone-link-1">0193 459 393</a>
+                <a href="tel:+22601955342440" class="contact__detail-value" id="phone-link-2">0195 553 4244</a>
+              </div>
+            </div>
+
+            <div class="contact__detail">
+              <div class="contact__detail-icon contact__detail-icon--green" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__detail-label">WhatsApp</div>
+                <a href="https://wa.me/22601934593939" class="contact__detail-value" target="_blank" rel="noopener noreferrer" id="whatsapp-contact-link">Envoyer un message</a>
+              </div>
+            </div>
+
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__detail-label">Localisation</div>
+                <div class="contact__detail-value contact__detail-placeholder">Adresse à compléter</div>
+              </div>
+            </div>
+
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__detail-label">Horaires</div>
+                <div class="contact__detail-value">Ouvert 7j/7 — Disponible sur demande</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap reveal reveal--delay">
+          <form class="contact__form" id="contact-form" novalidate aria-label="Formulaire de contact">
+            <h3 class="contact__form-title">Envoyer un message</h3>
+
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Nom complet <span aria-hidden="true">*</span></label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Votre nom" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone" class="form-label">Téléphone</label>
+              <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="Votre numéro" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Objet <span aria-hidden="true">*</span></label>
+              <select id="contact-subject" name="subject" class="form-input form-select" required>
+                <option value="" disabled selected>Sélectionnez un objet</option>
+                <option value="reservation">Réservation de chambre</option>
+                <option value="evenement">Organisation d'événement</option>
+                <option value="restaurant">Restauration / Traiteur</option>
+                <option value="formation">Formation hôtelière</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="contact-submit-btn">
+              Envoyer le message
+            </button>
+            <p class="contact__form-note">
+              Nous vous répondrons dans les meilleurs délais, par téléphone ou WhatsApp.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="footer__logo-icon" aria-hidden="true">H</span>
+          <span class="footer__logo-name">Hôtel Adjégounlè</span>
+        </div>
+        <p class="footer__tagline">Votre lieu de séjour,<br/>de partage et d'événements.</p>
+        <div class="footer__social">
+          <span class="footer__social-placeholder">Réseaux sociaux à compléter</span>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Navigation</h4>
+        <ul class="footer__links" role="list">
+          <li><a href="#accueil" class="footer__link">Accueil</a></li>
+          <li><a href="#chambres" class="footer__link">Chambres</a></li>
+          <li><a href="#services" class="footer__link">Services</a></li>
+          <li><a href="#restaurant" class="footer__link">Restaurant</a></li>
+          <li><a href="#evenements" class="footer__link">Événements</a></li>
+          <li><a href="#galerie" class="footer__link">Galerie</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Services</h4>
+        <ul class="footer__links" role="list">
+          <li><span class="footer__link-text">Chambres climatisées</span></li>
+          <li><span class="footer__link-text">Chambres VIP</span></li>
+          <li><span class="footer__link-text">Chambres ventilées</span></li>
+          <li><span class="footer__link-text">Restaurant &amp; Bar</span></li>
+          <li><span class="footer__link-text">Pâtisserie</span></li>
+          <li><span class="footer__link-text">Salle de fêtes</span></li>
+          <li><span class="footer__link-text">Salle de conférences</span></li>
+          <li><span class="footer__link-text">Formation hôtelière</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contact</h4>
+        <ul class="footer__links" role="list">
+          <li><a href="tel:+22601934593939" class="footer__link" id="footer-phone-1">0193 459 393</a></li>
+          <li><a href="tel:+22601955342440" class="footer__link" id="footer-phone-2">0195 553 4244</a></li>
+          <li><a href="https://wa.me/22601934593939" class="footer__link footer__link--wa" target="_blank" rel="noopener noreferrer" id="footer-wa">WhatsApp</a></li>
+          <li><span class="footer__link-text footer__address">Adresse à compléter</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">&copy; 2026 Hôtel Adjégounlè. Tous droits réservés.</p>
+        <p class="footer__credits">IFU : 2201000108000 &nbsp;|&nbsp; RCCM : RB/ABY/25 A3514</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MOBILE ACTION BAR ==================== -->
+  <div class="mobile-bar" id="mobile-bar" role="navigation" aria-label="Actions rapides mobiles">
+    <a href="tel:+22601934593939" class="mobile-bar__item" id="mobile-call-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+      </svg>
+      <span>Appeler</span>
+    </a>
+    <a href="https://wa.me/22601934593939?text=Bonjour%20H%C3%B4tel%20Adj%C3%A9gounl%C3%A8%2C%20je%20souhaite%20avoir%20des%20informations."
+       class="mobile-bar__item mobile-bar__item--wa" target="_blank" rel="noopener noreferrer" id="mobile-wa-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#chambres" class="mobile-bar__item mobile-bar__item--reserve" id="mobile-reserve-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      <span>Réserver</span>
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
